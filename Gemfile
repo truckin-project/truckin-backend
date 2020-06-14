@@ -16,6 +16,8 @@ gem 'authy', '~> 2.7'
 gem 'jwt'
 gem 'simple_command'
 gem 'rails_admin', '~> 2.0'
+gem 'oj'
+gem 'faraday'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

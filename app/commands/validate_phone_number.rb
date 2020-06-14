@@ -6,7 +6,7 @@ class ValidatePhoneNumber
   end
 
   def call
-    Authy.valid_phone_number?(phone_number) if user
+    Verify.valid_phone_number?(phone_number) if user
   end
 
   private

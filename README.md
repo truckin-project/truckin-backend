@@ -1,24 +1,36 @@
-# README
+## Truckin
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Admin Dashboard Live Demo: [Here](https://truckin-app.herokuapp.com/admin)
 
-Things you may want to cover:
+##### Prerequisites
 
-* Ruby version
+The setups steps expect following tools installed on the system.
 
-* System dependencies
+- Github
+- Ruby [2.7.1](https://github.com/leospaula/truckin/blob/master/.ruby-version#L1)
+- Rails [6.0.3](https://github.com/leospaula/truckin/blob/master/Gemfile#L6)
 
-* Configuration
+##### 1. Check out the repository
 
-* Database creation
+```bash
+git clone git@github.com:leospaula/truckin.git
+```
 
-* Database initialization
+##### 2. Create and setup the database
 
-* How to run the test suite
+Run the following commands to create and setup the database.
 
-* Services (job queues, cache servers, search engines, etc.)
+```ruby
+bundle exec rake db:create
+bundle exec rake db:setup
+```
 
-* Deployment instructions
+##### 3. Start the Rails server
 
-* ...
+You can start the rails server using the command given below.
+
+```ruby
+bundle exec rails s
+```
+
+And now you can visit the site with the URL http://localhost:3000
